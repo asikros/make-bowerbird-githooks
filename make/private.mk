@@ -11,6 +11,7 @@ MAKEFLAGS += --warn-undefined-variables
 NAME := bowerbird-git
 VERSION := $(shell git describe --always --dirty --broken 2> /dev/null)
 WORKDIR_ROOT := $(CURDIR)/.make
+WORKDIR_BUILD = $(WORKDIR_ROOT)/build
 WORKDIR_DEPS = $(WORKDIR_ROOT)/deps
 WORKDIR_TEST = $(WORKDIR_ROOT)/test/$(NAME)/$(VERSION)
 
