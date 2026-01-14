@@ -28,6 +28,6 @@ private_clean:
 	@echo "INFO: Cleaning complete."
 	@echo
 
-ifdef bowerbird::test::generate-runner
-    $(call bowerbird::test::generate-runner,private_test,test)
+ifdef bowerbird::test::suite
+$(call bowerbird::test::suite,private_test,test/bowerbird-git,test*.mk,test*)
 endif
