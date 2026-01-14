@@ -1,3 +1,3 @@
 # Bowerbird Githooks
 
-[![Makefile CI](https://github.com/ic-designer/make-bowerbird-git/actions/workflows/makefile.yml/badge.svg)](https://github.com/ic-designer/make-bowerbird-git/actions/workflows/makefile.yml)
+[![Makefile CI](https://github.com/asikros/make-bowerbird-git/actions/workflows/makefile.yml/badge.svg)](https://github.com/asikros/make-bowerbird-git/actions/workflows/makefile.yml)
