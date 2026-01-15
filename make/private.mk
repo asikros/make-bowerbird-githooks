@@ -17,7 +17,9 @@ WORKDIR_TEST = $(WORKDIR_ROOT)/test/$(NAME)/$(VERSION)
 
 # Includes
 include bowerbird.mk
+ifneq ($(MAKECMDGOALS),clean)
 include make/deps.mk
+endif
 
  # Targets
 .PHONY: private_clean
