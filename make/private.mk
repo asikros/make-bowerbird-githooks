@@ -17,9 +17,7 @@ WORKDIR_TEST = $(WORKDIR_ROOT)/test/$(NAME)/$(VERSION)
 
 # Includes
 include bowerbird.mk
-ifneq ($(MAKECMDGOALS),clean)
 include make/deps.mk
-endif
 
  # Targets
 .PHONY: private_clean
@@ -32,5 +30,5 @@ private_clean:
 	@echo
 
 ifdef bowerbird::test::suite
-$(call bowerbird::test::suite,private_test,test/bowerbird-git,test*.mk,test*)
+$(call bowerbird::test::suite,private_check,test/bowerbird-git,test*.mk,test*)
 endif
