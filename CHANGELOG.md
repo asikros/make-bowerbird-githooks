@@ -18,14 +18,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] - YYYY-MM-DD
 
 ### Added
-- Added `bowerbird-libs` as a dependency for kwargs support
 ### Changed
-- Updated the `bowerbird-deps` and `bowerbird-test` calls to the new syntax.
-- Converted all dependencies to use low-level API (`bowerbird::deps::git-dependency-low-level`)
+- Migrated from deprecated `make-bowerbird-deps` and `make-bowerbird-libs` to unified `make-bowerbird-core`
+- Converted all dependencies to use modern kwargs-based API (`bowerbird::core::git-dependency`)
+- Simplified dependency bootstrap process with new bowerbird-loader pattern
 ### Deprecated
+- Removed `bowerbird-libs` dependency (now consolidated into bowerbird-core)
 ### Fixed
 - Wrapped the generation of the pre-push hook in an `ifndef` to avoid running the
-  command multiple times during recursive make.
+  command multiple times during recursive make
 ### Security
 
 
